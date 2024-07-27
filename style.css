@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    font-family: "Inter";
+}
+
+body {
+    background-color: var(--Grey-900);
+}
+
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+.parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0px;
+}
+.container {
+    margin: auto;
+    width: 500px;
+    background-color: var(--Grey-800);
+    height: 790px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.container img {
+    width: 120px;
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.container h1 {
+    color: var(--White);
+    margin-bottom: 10px;
+}
+
+.container h2 {
+    font-size: 18px;
+    color: var(--Green);
+}
+
+.container p {
+    margin-top: 20px;
+    color: var(--White);
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.container .social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.container .social-links a {
+    text-decoration: none;
+    color: white;
+    width: 80%;
+    background-color: var(--Grey-700);
+    padding: 20px 0px 20px 0px;
+    border-radius: 10px;
+}
+
+.container .social-links a:hover {
+    background-color: var(--Green);
+    color: var(--Grey-900);
+}
+
+.attribution {
+    color: var(--White);
+    margin-top: -100px;
+}
+
+@media (max-width: 600px) {
+    .parent {
+        padding: 100px 30px;
+    }
+}
